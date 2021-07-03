@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+		<title>catit</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="logoMin">
+				<img src="Imagenes/ojosgatos.jpg">
+			</div> 
+			<nav>
+				<ul>				
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div">
+				<a href="contacto.html"class="solicitar">Solicitar presupuesto</a>
+			</div>
+		</header>
+
+	<main class="mainGradient">
+		<div class="contenedorC">	
+		 <!--input--> 				
+		<div>
+			<h1 class="contenedor__title">Contactanos</h1>
+		</div>
+		<!--input-->
+		
+		<form action="enviar.php" method="post" enctype="multipart/form-data">
+
+			<div class="contenedor__form">
+				<label for="Nombre">Nombre</label>
+					<input type="text" name="Nombre" maxlength="15">
+				<br>
+				<label for="Apellido">Apellido</label>
+					<input type="text" name="Apellido" maxlength="15">
+				<br>
+				<label for="mailto">Email</label>
+					<input type="mailto" name="mailto" required>
+				<br>
+				<label for="numero">Movil</label>
+					<input type="numero" name="numero" required>
+				<br>					
+			</div>
+
+		 <!--selection-->
+			<div>
+				<h2 class="contenedor__title">Contanos sobre vos</h2>
+			</div>
+
+			<div class="contenedor__selection">						
+
+				<label for="publico">Emprendedor</label>
+					<input type="radio" name="publico" value="Emprendedor">
+				<label for="publico">P.y.m.e</label>
+					<input type="radio" name="publico" value="P.y.m.e">	
+				<label for="publico">Corporacion</label>
+					<input type="radio" name="publico" value="Corporacion">
+				<br>
+				<br>
+				<label for="Fundacion sin fines de lucro">Fundacion sin fines de lucro</label>
+					<input type="checkbox" name="publico" value="Fundacion sin fines de lucro">
+						
+			</div>		
+
+		 <!--pack-text area-enviar-->
+			<div>
+				<h3 class="contenedor__title">Selecciona tu pack</h3>
+			</div>
+			
+			<div class="contenedor__pack">
+
+				<select name="pack">
+					<option value="Desarrollo web">Desarrollo web</option>
+					<option value="App movil">App movil</option>
+					<option value="Branding">Branding</option>
+					<option value="All inclusive">All inclusive</option>
+				</select>
+				<br>
+				<br>
+
+				<textarea>Dejanos aqui tu propuesta</textarea>
+				<br>
+				<input type="reset" name="reset" value="Limpiar">
+				<input type="submit" name="submit" value="Enviar">					
+			</div>
+		</form>	
+	</div>		
+	</main>	
+
+	<footer>
+		<div id="titleP">
+		<h4>Podes seguirnos en las redes o contactactarnos por whatsapp.</h4>
+		</div>
+		<div id="fb">
+			<a href="https://www.facebook.com" class="fontf1">Facebook</a>
+		</div>
+		<div id="in">
+			<a href="https://www.instagram.com/" class="fontf1">Intagram</a>
+		</div>	
+		<div id="wsp">
+			<a href="https://web.whatsapp.com/" class="fontf1">Wsp</a>
+		</div>
+		<div id="mailto">
+			<a href="mailto:catit@catit.com" class="fontf1">catit@catit.com</a>
+		</div>			
+	</footer>
+	</body>
+</html>
