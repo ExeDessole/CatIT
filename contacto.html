@@ -10,24 +10,30 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="logoMin">
-				<img src="Imagenes/ojosgatos.jpg">
-			</div> 
-			<nav>
-				<ul>				
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="servicios.html">Servicios</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+		<header >
+			<div class="miniatura"> <!--Bloque logo miniatura-->
+				<img src="Imagenes/logo1.png">
+			</div>
+	
+			<nav> <!--Bloque Menú-->
+				<ul class="menu">
+					<li class="menu__li"><a href="index.html" class="menu__nav">Inicio</a></li>
+					<li class="menu__li"><a href="nosotros.html" class="menu__nav">Nosotros</a></li>
+					<li class="menu__li"><a href="portfolio.html" class="menu__nav">Portfolio</a></li>
+					<li class="menu__li"><a href="servicios.html" class="menu__nav">Servicios</a></li>
+					<li class="menu__li"><a href="contacto.html" class="menu__nav">Contacto</a></li>
 				</ul>
 			</nav>
-			<div">
-				<a href="contacto.html"class="solicitar">Solicitar presupuesto</a>
+	
+			<div class="boton"> <!--Bloque Solicitar presupuesto-->
+				<a href="contacto.html" class="boton__solicitar">Solicitar Presupuesto</a>
+			</div>
+	
+			<div class="titulo"> <!--Bloque Título-->
+				<!--<h1 class="titulo__h1">Cat IT</h1>-->
+				<img src="Imagenes/logo1.png" alt="">
 			</div>
 		</header>
-
 	<main class="mainGradient">
 		<div class="contenedorC">	
 		 <!--input--> 				
@@ -98,21 +104,22 @@
 	</div>		
 	</main>	
 
-	<footer>
-		<div id="titleP">
-		<h4>Podes seguirnos en las redes o contactactarnos por whatsapp.</h4>
+	<footer class="footer">
+
+		<div class="footer__redes">
+			<h3 class="footerCard__titulo">Podes seguirnos en las redes.</h3>
+			<ul class="footerCard__list">
+				<li><a href="https://www.facebook.com">Facebook</a></li>
+				<li><a href="https://www.instagram.com/">Instagram</a></li>
+			</ul>
 		</div>
-		<div id="fb">
-			<a href="https://www.facebook.com" class="fontf1">Facebook</a>
-		</div>
-		<div id="in">
-			<a href="https://www.instagram.com/" class="fontf1">Intagram</a>
-		</div>	
-		<div id="wsp">
-			<a href="https://web.whatsapp.com/" class="fontf1">Wsp</a>
-		</div>
-		<div id="mailto">
-			<a href="mailto:catit@catit.com" class="fontf1">catit@catit.com</a>
+		
+		<div class="footer__contacto">
+			<h3 class="footerCard__titulo">Para comunicarte con nosotros.</h3>
+			<ul class="footerCard__list">
+				<li><a href="https://web.whatsapp.com/">Wsp</a></li>
+				<li><a href="mailto:catit@catit.com">catit@catit.com</a></li>
+			</ul>
 		</div>			
 	</footer>
 	</body>
