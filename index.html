@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
 		<title>Cat IT</title>
 	</head>
 	<body>
@@ -16,16 +17,16 @@
 	
 			<nav> <!--Bloque Menú-->
 				<ul class="menu">
-					<li><a href="index.html" class="menu__nav">Inicio</a></li>
-					<li><a href="nosotros.html" class="menu__nav">Nosotros</a></li>
-					<li><a href="portfolio.html" class="menu__nav">Portfolio</a></li>
-					<li><a href="servicios.html" class="menu__nav">Servicios</a></li>
-					<li><a href="contacto.html" class="menu__nav">Contacto</a></li>
+					<li class="menu__li"><a href="index.html" class="menu__nav">Inicio</a></li>
+					<li class="menu__li"><a href="nosotros.html" class="menu__nav">Nosotros</a></li>
+					<li class="menu__li"><a href="portfolio.html" class="menu__nav">Portfolio</a></li>
+					<li class="menu__li"><a href="servicios.html" class="menu__nav">Servicios</a></li>
+					<li class="menu__li"><a href="contacto.html" class="menu__nav">Contacto</a></li>
 				</ul>
 			</nav>
 	
 			<div class="boton"> <!--Bloque Solicitar presupuesto-->
-				<a href="contacto.html" class="boton__solicitar">Solicitar presupuesto</a>
+				<a href="contacto.html" class="boton__solicitar">Solicitar Presupuesto</a>
 			</div>
 	
 			<div class="titulo"> <!--Bloque Título-->
@@ -34,41 +35,38 @@
 			</div>
 		</header>
 		
-		<main>
+		<main class="mainAgua"> <!--Bloque de 3 cards con los servicios + boton a servicios-->
 			<section class="sectioncards">
 				<div id="web" class="card">
 					<img src="Imagenes/web.png" class="card__img">
-					<h2 class="card__titulo">Desarrollo Web</h2>
+					<h1 class="card__titulo">Desarrollo Web</h1>
 					<p class="card__texto">Permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.	Personas de todo el mundo conoceran tu empresa.</p>
 				</div>
 	
 				<div id= movil class="card">
 					<img src="Imagenes/movil.png" class="card__img">
-					<h2 class="card__titulo">Mobil first</h2>
+					<h1 class="card__titulo">Mobil first</h1>
 					<p class="card__texto">Aplicaciones destinadas a tablets y smartphone.Diseño responsive para cualquier dispositivo movil.</p>
 				</div>
 	
 				<div id= branding class="card">
 					<img src="Imagenes/branding.png" class="card__img">
-					<h2 class="card__titulo">Branding</h2>
+					<h1 class="card__titulo">Branding</h1>
 					<p class="card__texto">Construimos tu marca mostrando todas las cualidades para que el cliente pueda conocer los valores y la vision que tu empresa tiene para diferenciarse de otras.Aplica las mejores estrategias para diferenciarte del resto.</p>
 				</div>
 	
 				<div class="boton2">
-					<a href="servicios.html" class="boton2__servicios">Nuestros servicios</a>
+					<a href="servicios.html" class="boton2__general">Nuestros servicios</a>
 				</div>
 	
 			</section>
 		</main>
 	
-			
-		</main>	
 			<!--Esta seccion enumera los beneficios por contratarnos-->
-			<section>
-				<div>
-					<h2>Beneficios por contratarnos</h2>
-				</div>	
-					<ol class="beneficios">
+			<section class="beneficios">
+					<h2 class="beneficios__titulo animate__animated animate__bounceInLeft">Beneficios por contratarnos</h2>
+
+					<ol class="beneficios__lista">
 						<li>Desarrollo de nuevas tendencias</li>
 						<li>Diseño web responsive</li>
 						<li>Incremento de ventas asegurado</li>
@@ -76,22 +74,28 @@
 			</section>
 		
 			<!--En el pie de pagina se linkea a RR.SS y mail-->
-		<footer>
-			<div id="titleP">
-			<h4>Podes seguirnos en las redes o contactactarnos por whatsapp.</h4>
+		<footer class="footer">
+
+			<div class="footer__redes">
+				<h3 class="footerCard__titulo">Podes seguirnos en las redes</h3>
+				<ul class="footerCard__list">
+					<li><a href="https://www.facebook.com">Facebook</a></li>
+					<li><a href="https://www.instagram.com/">Instagram</a></li>
+				</ul>
 			</div>
-			<div id="fb">
-				<a href="https://www.facebook.com" class="fontf1">Facebook</a>
-			</div>
-			<div id="in">
-				<a href="https://www.instagram.com/" class="fontf1">Intagram</a>
-			</div>	
-			<div id="wsp">
-				<a href="https://web.whatsapp.com/" class="fontf1">Wsp</a>
-			</div>
-			<div id="mailto">
-				<a href="mailto:catit@catit.com" class="fontf1">catit@catit.com</a>
+			
+			<div class="footer__contacto">
+				<h3 class="footerCard__titulo">Para comunicarte con nosotros</h3>
+				<ul class="footerCard__list">
+					<li><a href="https://web.whatsapp.com/">Wsp</a></li>
+					<li><a href="mailto:catit@catit.com">catit@catit.com</a></li>
+				</ul>
 			</div>			
 		</footer>
+
+		<script src="js/wow.min.js"></script>
+	<script>
+   new WOW().init();
+	</script>
 	</body>
 </html>
