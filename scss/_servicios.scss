@@ -1,0 +1,72 @@
+/* Seccion servicios */
+
+.mainServicios{
+    .servicios{
+        #gradientWeb{
+            background-image: linear-gradient(45deg,#0388A6,#04D9D9,#05F2DB);
+        }
+        #gradientMovil{
+            background-image: linear-gradient(45deg,#D93232,#F26A1B,#D9CB04);
+        }
+        #gradientBrand{
+            background-image: linear-gradient(45deg,#F24444,#D99982,#9DBF21); 
+        }
+        .cardServicios{
+            padding: 7rem 5rem 7rem 5rem;
+            display: grid;
+            grid-template-areas: "imagen titulo" "imagen texto";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50% 50%;
+            justify-items: center;
+            align-items: center;
+            .cardServicios__img{
+                grid-area: imagen;
+                width: auto;
+                height: auto;
+                max-width: 790px;
+                max-height: 500px;
+                border-radius: 30px;
+            }
+            .cardServicios__titulo{
+                grid-area: titulo;
+                display: grid;
+                color: nth($colores, 2);
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-weight: bold;
+                font-size: 4rem;
+            }
+            .cardServicios__texto{
+                grid-area: texto;
+                display: grid;
+                color: nth($colores, 2);
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-weight: unset;
+                font-style: italic;
+                font-size: 1.5rem;
+                align-self: normal;
+                padding: 0 3rem 0 3rem;
+                line-height: 4rem;
+            }
+        }
+        .boton2{
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .boton2__servicios{
+                background-color: nth($colores, 1);  
+                color: #f1f1f1;
+                font-family: "Open Sans condensed", sans-serif;
+                font-size: 1.5rem;
+                border-radius: 8px;
+                text-decoration: none;
+                padding: 12px;
+                &:hover{
+                    background-color: nth($colores, 2);  
+                    color: nth($colores, 1);
+                    border: nth($border, 1);
+                }
+            }
+        }
+    }  
+}              
