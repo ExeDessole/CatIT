@@ -1,0 +1,47 @@
+$colores:
+#EE0334,
+#f1f1f1,
+#032026,
+#095F73,
+#20818C,
+#66F2F2,
+#0388A6,
+#04D9D9,
+#05F2DB,
+#D93232,
+#F26A1B,
+#D9CB04,
+#F24444,
+#D99982,
+#9DBF21;
+
+$bg-color:
+#EE0334,
+#f1f1f1,
+#032026,
+#095F73,
+#20818C,
+#66F2F2;
+
+$fondSize:
+16px,
+22px,
+24px,
+48px;
+
+$border:
+solid 2px #EE0334,
+solid 2px #f1f1f1,
+solid 2px #20818C,
+solid 2px #095F73;
+
+.botonGeneral{
+  background-color: nth($colores, 1);  
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px;
+}
+

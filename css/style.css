@@ -1,424 +1,355 @@
-
-/*Index*/
-*{
-  margin: 0;
-  padding: 0;
-}
-
-/*
-h1{ 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 64px;
-  text-align: center;
-  color:#EE0334;
-} 
-
-h2{ 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 42px;
-  text-align: center;
-  color:#EE0334;
-  background-color: #f1f1f1;
-} 
-
-h3{ 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  text-align: center;
-  color:#EE0334;
-}
-
-h4{ 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: normal;
-  font-size: 32px;
-  text-align: center;
-  color: #f1f1f1;
-} 
-
-h5{ 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  text-align: center;
-  color: #f1f1f1;
-} 
-.fontf1{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
-  color: #f1f1f1;
-}
-
-p{
-text-align: center;
-}
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
+.botonGeneral {
   background-color: #EE0334;
-}
-.miniatura{
-  width: 38px;
-  height: 32px;
-  overflow: hidden;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: space-between;
-}
- li a{
   color: #f1f1f1;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 15px;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
   text-decoration: none;
   padding: 8px;
- }
-.solicitar{
-  color: #f1f1f1;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px;
-  border: solid 2px #f1f1f1;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 4px; 
 }
-  .fondoEspacio{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Imagenes/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 350px;
-  }
-  .fondoEspacio h1{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 120px;
-    text-align: center;
-    color:#f1f1f1; 
-  }
 
-.servicios{
+header {
+  background-color: #EE0334;
+  display: grid;
+  grid-template-areas: "miniatura menu boton" "titulo titulo titulo";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3rem 18rem;
+  align-items: center;
+}
+header .miniatura {
+  grid-area: miniatura;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+header .miniatura img {
+  width: auto;
+  height: auto;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+header .menu {
+  grid-area: menu;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: auto;
-  height: 600px;
-  padding-top: 32px;
-  background-image: linear-gradient(#66F2F2, #f1f1f1);
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0.5rem;
 }
-
-.buttonservicios{
-  display: flex;
-  justify-content: center;
-  background-color:#f1f1f1 ;
+header .menu li:hover {
+  transform: scale(1.6, 1.6);
+  transition-duration: 0.1s;
 }
-
-.web{
-  width: 62px;
-  height: 62px;
-  float: left;
-}
-.web img:hover{
-  transform: rotate(45deg);
-}
-.movil{
-  width: 62px;
-  height: 62px;
-  float: left;
-}
-.movil img:hover{
-  transform: scale(2,2);
-}
-
-.b{
-  width: 62px;
-  height: 62px;
-}
-.b img:hover{
-  transform: translate(5px, 10px);
-}
-
-.buttonservicios a{
-  background-color: #20818C;
-  color: #f1f1f1;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  border-radius: 8px;
+header .menu a {
   text-decoration: none;
-  padding: 4px; 
-}
-.buttonservicios a:hover{
-  transform: scale(1.2,1.2);
-}
-
-/*Beneficios por contratarnos*/
-/*Barra de navegacion y titulo*/
-header{
-	background-color: #EE0334;
-	display: grid;
-	grid-template-areas:
-		"miniatura menu boton"
-		"titulo titulo titulo";
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 3rem 18rem;
-	align-items: center;
-}
-.miniatura{
-	grid-area: miniatura;
-	width: 2rem;
-	height: 2rem;
-	padding-left: 0.5rem;
-}
-.miniatura img{
-	width: auto;
-	height: auto;
-	max-width: 2rem;
-	max-height: 2rem;
-}
-.menu{
-	grid-area: menu;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	list-style-type: none;
-}
-.menu__nav{
-	color:#f1f1f1;
-	font-family:'Open Sans Condensed', sans-serif;
-  	font-size: 16px;
-  	text-decoration: none;
-  	padding: 8px;
-}
-li:hover{
-	transform: scale(1.5,1.5);
-}
-.boton{
-	grid-area: boton;
-	justify-self: right;
-	padding: 0.5rem;
-}
-.boton__solicitar{
-	color: #f1f1f1;
-	font-family: 'Open Sans Condensed', sans-serif;
-  	font-size: 1rem;
-  	border: solid 2px #f1f1f1;
-  	border-radius: 8px;
-  	text-decoration: none;
-  	padding: 4px;
-}
-.titulo{
-	grid-area: titulo;
-	background-image: url(../Imagenes/fondo.jpg);
-	height: 18rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.titulo__h1{
-	color: #f1f1f1;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
-  	font-size: 6rem;
-	text-align: center;
-}
-.titulo img{
-	width: auto;
-	height: auto;
-	max-width: 15rem;
-	max-height: 15rem;
-}
-/*Fondo del main*/
-main{
-	background-image: linear-gradient(#20818C, #66F2F2, #f1f1f1);
-}
-
-/*Tarjetas de servicios*/
-.card{
-	margin: 1rem;
-	border: solid 2px #20818C;
-	border-radius: 8px;
-}
-.sectioncards{
-	display: grid;
-	grid-template-areas:
-		". web movil branding ."
-		". . boton2 . .";
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 40rem 3rem;
-	align-items: center;
-	justify-items: center;
-}
-#web{
-	grid-area: web;
-}
-#movil{
-	grid-area: movil;
-}
-#branding{
-	grid-area: branding;
-}
-.boton2{
-	grid-area: boton2;
-}
-.card{
-	width: 18rem;
-	height: 30rem;
-	display: grid;
-	grid-template-rows: 15rem auto 1fr; 
-	grid-row-gap: 1rem;
-	justify-items: center;
-	margin: 1rem;
-	padding: 1rem;
-	padding-top: 3rem;
-}
-.card__img{
-	width: auto;
-	height: auto;
-	max-width: 15rem;
-	max-height: 15rem;
-}
-.card__titulo{
-	color: #032026;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
-  	font-size: 3rem;
-}
-.card__texto{
-	color: #032026;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bolder;
-  	font-size: 1rem;
-	justify-self: stretch;
-}
-
-.boton2__servicios{ 
-  background-color: #20818C;
   color: #f1f1f1;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 16px;
+  padding: 10px 23px;
+}
+header .boton {
+  grid-area: boton;
+  justify-self: right;
+  padding: 0.5rem;
+}
+header .boton .boton__solicitar {
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  border: solid 2px #f1f1f1;
   border-radius: 8px;
   text-decoration: none;
   padding: 4px;
 }
-.boton2:hover{
-	transform: scale(1.3,1.3);
-}
-.beneficios{
+header .titulo {
+  grid-area: titulo;
+  background-image: url(../Imagenes/fondo.jpg);
+  width: 100%;
+  height: 18rem;
   display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  text-align: center;
-  background-color: #f1f1f1;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #20818C;
+  justify-content: center;
+  align-items: center;
 }
-
-
-/*Pie de página*/
-footer{
-  display: grid;
-  grid-template-areas:
-    "titulo red1 red2 red3"
-    ". . . ."
-    ". mailto . .";
-  grid-template-rows: 32px 32px 32px;
-  grid-template-columns: 900px 200px 200px 200px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  background-color: #EE0334;
-  padding: 16px;
-  }
-  #titleP{
-   grid-area: titulo;
-  }
-  #fb{
-    grid-area: red1;
-  }
-  #in{
-    grid-area: red2;
-  }
-  #wsp{
-    grid-area: red3;
-  }
-  #mailto{
-    grid-area: mailto;
-  }
-
-/*Seccion Nosotros*/
-.contenedorN{
-  padding-top: 53px;
-  padding-bottom: 130px;
-  background-image: linear-gradient(#66F2F2, #f1f1f1);
-}
-
-/*Main Gradient Seccion Portfolio- Servicios- Contacto*/
-.mainGradient{
-  background-image: linear-gradient(#66F2F2, #f1f1f1);
-}
-
-/*Seccion Servicios*/
-.contenedorS{
-  padding-top: 53px;
-  padding-bottom: 30px;
-}
-/*Seccion Contacto*/
-.contenedorC{
-margin: 60px 700px 80px 700px;
-padding: 5px 50px 10px 50px;
-background-color: #EE0334;
-border-radius: 20px;
-color: #f1f1f1;
-text-align: center;
-}
-
-.contenedor__title{
+header .titulo .titulo__h1 {
   color: #f1f1f1;
-  background-color:#EE0334 ;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  text-align: center;
+}
+header .titulo img {
+  width: auto;
+  height: auto;
+  max-width: 15rem;
+  max-height: 15rem;
 }
 
+/* Main- Tarjetas de servicios*/
+.mainAgua {
+  background-image: linear-gradient(#0388A6, #05F2DB, #f1f1f1);
+}
+.mainAgua .sectioncards {
+  display: grid;
+  grid-template-areas: ". web movil branding ." ". . boton2 . .";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33rem 6rem;
+  align-items: center;
+  justify-items: center;
+}
+.mainAgua .sectioncards #web {
+  grid-area: web;
+}
+.mainAgua .sectioncards #movil {
+  grid-area: movil;
+}
+.mainAgua .sectioncards #branding {
+  grid-area: branding;
+}
+.mainAgua .sectioncards .boton2 {
+  grid-area: boton2;
+}
+.mainAgua .sectioncards .card {
+  width: 17rem;
+  height: 28rem;
+  display: grid;
+  grid-template-rows: 15rem auto 1fr;
+  grid-row-gap: 1rem;
+  justify-items: center;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+.mainAgua .sectioncards .card:hover {
+  border: solid 2px #20818C;
+  border-radius: 18px;
+  transition-duration: 0.1s;
+}
+.mainAgua .sectioncards .card .card__img {
+  width: auto;
+  height: auto;
+  max-width: 15rem;
+  max-height: 15rem;
+}
+.mainAgua .sectioncards .card .card__titulo {
+  color: #032026;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: auto;
+}
+.mainAgua .sectioncards .card .card__texto {
+  color: #095F73;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  justify-self: stretch;
+  margin-top: 0.5rem;
+}
+.mainAgua .sectioncards .boton2:hover {
+  transform: scale(1.3, 1.3);
+  transition-duration: 0.1s;
+}
+.mainAgua .sectioncards .boton2 .boton2__general {
+  background-color: #EE0334;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px;
+}
 
-/*Seccion Portfolio*/
-/*Imagenes portfolio*/
-
-.bordeimg{
+/*Beneficios*/
+.beneficios {
+  background-color: #f1f1f1;
+  border-top: solid 2px #095F73;
+  text-align: center;
+}
+.beneficios .beneficios__titulo animate__animated animate__bounceInLeft {
+  padding: 1.5rem;
+  color: #032026;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.beneficios .beneficios__lista {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-top: solid 2px #095F73;
+  color: #095F73;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
-.img1{
-width: 750px;
-height: 450px;
-float: left;
+/*Footer*/
+.footer {
+  background-color: #EE0334;
+  display: grid;
+  grid-template-areas: "redes contacto";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3rem;
+  padding: 0.5rem;
+}
+.footer .footer__redes {
+  grid-area: redes;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer .footer__redes .footerCard__titulo {
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  margin: inherit;
+}
+.footer .footer__redes .footerCard__list {
+  list-style-type: none;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  margin: inherit;
+}
+.footer .footer__redes a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+}
+.footer .footer__contacto {
+  grid-area: contacto;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer .footer__contacto .footerCard__titulo {
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  margin: inherit;
+}
+.footer .footer__contacto .footerCard__list {
+  list-style-type: none;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  margin: inherit;
+}
+.footer .footer__contacto a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
 }
 
-.img2{
-  width: 750px;
-  height: 450px;
+/* Seccion servicios */
+.mainServicios .servicios #gradientWeb {
+  background-image: linear-gradient(45deg, #0388A6, #04D9D9, #05F2DB);
+}
+.mainServicios .servicios #gradientMovil {
+  background-image: linear-gradient(45deg, #D93232, #F26A1B, #D9CB04);
+}
+.mainServicios .servicios #gradientBrand {
+  background-image: linear-gradient(45deg, #F24444, #D99982, #9DBF21);
+}
+.mainServicios .servicios .cardServicios {
+  padding: 7rem 5rem 7rem 5rem;
+  display: grid;
+  grid-template-areas: "imagen titulo" "imagen texto";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+.mainServicios .servicios .cardServicios .cardServicios__img {
+  grid-area: imagen;
+  width: auto;
+  height: auto;
+  max-width: 790px;
+  max-height: 500px;
+  border-radius: 30px;
+}
+.mainServicios .servicios .cardServicios .cardServicios__titulo {
+  grid-area: titulo;
+  display: grid;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.mainServicios .servicios .cardServicios .cardServicios__texto {
+  grid-area: texto;
+  display: grid;
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: unset;
+  font-style: italic;
+  font-size: 1.5rem;
+  align-self: normal;
+  padding: 0 3rem 0 3rem;
+  line-height: 4rem;
+}
+.mainServicios .servicios .boton2 {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainServicios .servicios .boton2 .boton2__servicios {
+  background-color: #EE0334;
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 12px;
+}
+.mainServicios .servicios .boton2 .boton2__servicios:hover {
+  background-color: #f1f1f1;
+  color: #EE0334;
+  border: solid 2px #EE0334;
 }
 
-.img3{
-  width: 750px;
-  height: 450px;
-  float: left;
+/* Seccion Nosotros*/
+.mainNosotros {
+  /*background-color: nth($colores, 2);*/
+  background-image: linear-gradient(45deg, #20818C, #f1f1f1);
+}
+.mainNosotros .nosotrosCard {
+  padding: 5rem;
+}
+.mainNosotros .nosotrosCard .nosotrosCard__titulo {
+  color: #EE0334;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.mainNosotros .nosotrosCard .nosotrosCard__texto {
+  color: #EE0334;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+}
+.mainNosotros .botonAqui {
+  background-color: linear-gradient(45deg, #20818C, #f1f1f1);
+  color: #EE0334;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  padding: 2px;
 }
 
-.img4{
-  width: 750px;
-  height: 450px;
-}
-
-
+/*# sourceMappingURL=style.css.map */
