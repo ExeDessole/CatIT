@@ -1,6 +1,13 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 @import "variables";
 @import "header";
 @import "main+beneficios";
 @import "footer";
 @import "servicios";
 @import "nosotros";
+@import "contacto";
+@import "portfolio";

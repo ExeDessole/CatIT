@@ -2,29 +2,42 @@
 
 .mainNosotros{
     /*background-color: nth($colores, 2);*/
-    background-image: linear-gradient(45deg,#20818C, #f1f1f1);
+    background-image: linear-gradient(#0388A6,#05F2DB,#f1f1f1);
     .nosotrosCard{
         padding: 5rem;
+        color: nth($colores, 2);
+        @media screen and (max-width:950px){
+            padding: 2rem;
+        }
         .nosotrosCard__titulo{
             color: nth($colores, 1);
             font-family: 'Open Sans Condensed', sans-serif;
             font-weight: bold;
             font-size: 3rem;
             text-align: center;
+            margin-top: 2rem;
+            @media screen and (max-width:950px){
+                font-size: 2rem;
+            }
         }
         .nosotrosCard__texto{
             color: nth($colores, 1);
             font-family: 'Open Sans Condensed', sans-serif;
             font-weight: bolder;
-            font-size: 1rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 4rem;
             text-align: center;
+            @media screen and (max-width:950px){
+                font-size: 1rem;
+                line-height: 2rem;
+            }
         }
     }    
     .botonAqui{
-        background-color: linear-gradient(45deg,#20818C, #f1f1f1); 
         color: nth($colores, 1);
         font-family: "Open Sans condensed", sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 2px;
     }
 }
