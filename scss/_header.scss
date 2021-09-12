@@ -100,3 +100,81 @@ body{
         }
     }
 }    
+header{
+    background-color: nth($colores, 1);
+    display: grid;
+    grid-template-areas: "miniatura menu boton" "titulo titulo titulo";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3rem 18rem;
+    align-items: center;
+    .miniatura{
+        grid-area: miniatura;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+        img{
+            width: auto;
+            height: auto;
+            max-width: 2rem;
+            max-height: 2rem;
+        }
+    }
+    .menu{
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0.5rem;
+        li{
+            &:hover{
+                transform: scale(1.6,1.6);
+                transition-duration: 0.1s;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores, 2);
+            font-family: "Open Sans condensed", sans-serif;
+            font-size: 16px;
+            padding: 10px 23px;
+        }
+    }
+    .boton{
+        grid-area: boton;
+        justify-self: right;
+        padding: 0.5rem;
+        .boton__solicitar{
+            color: nth($colores, 2);
+            font-family: "Open Sans condensed", sans-serif;
+            font-size: 1rem;
+            border: solid 2px #f1f1f1;
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 4px;
+        }
+    }
+    .titulo{
+        grid-area: titulo;
+        background-image: url(../Imagenes/fondo.jpg);
+        width: 100%;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo__h1{
+            color: nth($colores, 2);
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: bold;
+            font-size: 6rem;
+            text-align: center;
+        } 
+        img{
+            width: auto;
+            height: auto;
+            max-width: 15rem;
+            max-height: 15rem; 
+        }
+    }
+}
+

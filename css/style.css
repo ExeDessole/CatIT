@@ -132,6 +132,82 @@ body header .titulo img {
   max-height: 80%;
 }
 
+header {
+  background-color: #EE0334;
+  display: grid;
+  grid-template-areas: "miniatura menu boton" "titulo titulo titulo";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3rem 18rem;
+  align-items: center;
+}
+header .miniatura {
+  grid-area: miniatura;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+header .miniatura img {
+  width: auto;
+  height: auto;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+header .menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+header .menu li:hover {
+  transform: scale(1.6, 1.6);
+  transition-duration: 0.1s;
+}
+header .menu a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 16px;
+  padding: 10px 23px;
+}
+header .boton {
+  grid-area: boton;
+  justify-self: right;
+  padding: 0.5rem;
+}
+header .boton .boton__solicitar {
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  border: solid 2px #f1f1f1;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 4px;
+}
+header .titulo {
+  grid-area: titulo;
+  background-image: url(../Imagenes/fondo.jpg);
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .titulo .titulo__h1 {
+  color: #f1f1f1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  text-align: center;
+}
+header .titulo img {
+  width: auto;
+  height: auto;
+  max-width: 15rem;
+  max-height: 15rem;
+}
+
 /* Main- Tarjetas de servicios*/
 .mainAgua {
   background-image: linear-gradient(#0388A6, #05F2DB, #f1f1f1);
@@ -360,7 +436,6 @@ body header .titulo img {
 .footer .footer__contacto a:hover {
   text-decoration: underline;
 }
-
 /* Sección servicios */
 .mainServicios .servicios #gradientWeb {
   background-image: linear-gradient(45deg, #0388A6, #04D9D9, #05F2DB);
@@ -454,7 +529,6 @@ body header .titulo img {
 
 /* Seccion Nosotros*/
 .mainNosotros {
-  /*background-color: nth($colores, 2);*/
   background-image: linear-gradient(#0388A6, #05F2DB, #f1f1f1);
 }
 .mainNosotros .nosotrosCard {
@@ -518,7 +592,7 @@ body header .titulo img {
   background-color: #EE0334;
   border-radius: 15px;
   width: 25rem;
-  height: 47rem;
+  height: auto;
   margin: auto;
   padding: 1rem;
 }
@@ -629,4 +703,13 @@ body header .titulo img {
   margin: 0 auto;
 }
 
+.botonGeneral {
+  background-color: #EE0334;
+  color: #f1f1f1;
+  font-family: "Open Sans condensed", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px;
+}
 /*# sourceMappingURL=style.css.map */

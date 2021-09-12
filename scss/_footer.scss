@@ -83,3 +83,69 @@
         }
     }
 }
+/*Footer*/
+.footer{
+    background-color: nth($bg-color, 1);
+    display: grid;
+    grid-template-areas: "redes contacto";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem;
+    padding: 0.5rem;
+    .footer__redes{
+        grid-area: redes;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        .footerCard__titulo{
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;
+            font-size: 1rem;
+            margin: inherit;
+        }
+        .footerCard__list{
+            list-style-type: none;
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;
+            margin: inherit;
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;  
+        }
+    }
+    .footer__contacto{
+        grid-area: contacto;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        .footerCard__titulo{
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;
+            font-size: 1rem;
+            margin: inherit;
+        }
+        .footerCard__list{
+            list-style-type: none;
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;
+            margin: inherit;
+        } 
+        a{
+            text-decoration: none;
+            color: nth($colores, 2);
+            font-family: "Open Sans Condensed", sans-serif;
+            font-weight: normal;
+        }
+    }
+}
+
